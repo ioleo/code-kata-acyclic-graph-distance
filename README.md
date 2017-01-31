@@ -17,6 +17,8 @@ Which represents following information:
 * City #8 has direct road to city #0
 * City #9 has direct road to city #1
 
+> Note: the "from" city number is the index of an element, the "to" city number is the value of an element.
+
 ```
 val expectedOutput: Array[Int] = Array(1, 3, 2, 3, 0, 0, 0, 0, 0)
 ```
@@ -30,3 +32,5 @@ Which represents following information:
 * ...
 * There are 0 cities at reachable in 8 steps
 * There are 0 cities at reachable in 9 steps
+
+> Note: the "number of steps" is the index of an element plus one, the "number of cities" at given distance is the value of an element.
