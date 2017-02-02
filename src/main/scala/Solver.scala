@@ -14,7 +14,7 @@ case class Solver(input: Array[Int]) {
   lazy val roads = input.zipWithIndex.map { case (to, from) => Road(from, to) }
 
   // finding the capital city
-  lazy val capitalCity: City = roads.filter(road => road.from == road.to).head.from
+  lazy val capitalCity: City = roads.filter(_.isCapital).head.from
 
   // given a set of cities in the vicinity N, find a set of cities in the vicinity N + 1
   def furtherNeighbours(cities: Seq[City]): Seq[City] = roads
